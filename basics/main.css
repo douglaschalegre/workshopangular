@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+    /*
+    GOOGLE FONTS  
+    https://fonts.google.com/
+     */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    padding: 35px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > img{
+    height: 60px;
+}
+
+li{
+    list-style: none;
+}
+
+/*MENU*/
+#menu{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    
+
+}
+
+#menu li a{
+    color: rgb(128, 0, 128);
+    font-weight: bolder;
+    transition: 0.6s;
+}
+
+#menu li a:hover{
+    color: rgb(231, 105, 183);
+    font-weight: bolder;
+
+}
+/*SECTION*/
+section{
+    height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+section > h1{
+
+}
+
+section > p{
+    margin: 0px;
+}
+
+footer{
+
+    color:purple;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom:0px;    
+}
+
+
