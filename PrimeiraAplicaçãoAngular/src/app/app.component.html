@@ -1,0 +1,60 @@
+<!-- EXEMPLOS
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+ interpolação 
+{{ name  }}
+
+ event binding 
+<button type="submit" (click)="receberDados($event)"> Send </button>
+
+ 2way data binding 
+<input type="text"[(ngModel)]="name">
+ -->
+
+<nav>
+	<h2 class="ameaça">p-passa o cartao de credito oni-chan!</h2>
+</nav>
+
+
+<section class="center">
+  <img src="https://memestatic1.fjcdn.com/thumbnails/comments/Put+the+nebby+in+the+bag+oniichan+_3c80be95f01fda3a6835b3569587f970.png">
+  <table>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Cartao de credito</th>
+        <th>CCV</th>
+        <th></th>
+      </tr>
+
+      <tr *ngFor="let user of users; let i = index">
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.cc}}</td>
+        <td>{{user.ccv}}</td>
+        <td>
+          <i class="material-icons pointer" (click)="editar(user,i)">edit</i>
+          <i class="material-icons pointer btnExcluir" (click)="deletarCC(i)">delete</i>
+        </td>
+      </tr>
+  </table>
+</section>
+
+    <form class="center" *ngIf="userForm.value.showForm" [formGroup]="userForm">
+      <input type="text" placeholder="Nome" formControlName="name">
+      <input type="number" placeholder="20" formControlName="age">
+      <input type="number" placeholder="1234 4567 8912 3456" formControlName="cc">
+      <input type="number" placeholder="123" formControlName="ccv">
+      <button class="btn" type="submit" (click)="userForm.value.edit != null ? editarUser() : adicionarCC() ">adicionar</button>
+    </form>
+
+<button class="btn" *ngIf="!userForm.value.showForm" type="button" (click)="verForm();">adicione seu cartao</button>
+
+
+
+ <footer>
+   <h5>Desenvolvido por Douglas Chalegre @ Angular day 10/11/2018</h5>
+ </footer>
