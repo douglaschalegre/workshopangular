@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture|Poor+Story');
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*NAV E FOOTER*/
+nav, footer{
+  width: 100%;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+nav{
+  font-family: 'Black And White Picture', sans-serif;
+  font-size: 1.2em;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+}
+
+.ameaça{
+  color: red;
+  margin-top: 0px;
+}
+
+/* TABELA */
+table{
+  font-family: 'Poor Story', cursive;
+  width: 50%;
+  margin: 5%;
+  border-collapse: collapse;
+}
+
+input{
+  border: 1px solid purple;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+tr:nth-child(odd){
+  background-color:rgba(255, 192, 203, 0.364);
+}
+
+tr:nth-child(1){
+  background-color: purple;
+}
+
+td{
+  text-align: center; 
+}
+
+.pointer{
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s
+}
+
+.pointer:hover{
+  opacity: 1;
+}
+
+/*BOTOES*/
+
+.btn{
+  border-radius: 5px;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  outline: 0;
+  font-size: 15px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.btnExcluir{
+  color: red;
+}
